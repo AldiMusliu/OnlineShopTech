@@ -157,10 +157,11 @@
     grid-template-columns: 1fr;
     text-align: center;
     row-gap: 4.8rem;
+    padding: 4.8rem 9.6rem 0rem 9.6rem;
   }
 
   .hero img {
-    max-width: 70%;
+    max-width: 90%;
   }
 
   .categorie0 {
@@ -198,9 +199,20 @@
 @media (max-width: 33em) {
   .hero {
     row-gap: 3.2rem;
-    padding-top: 3.2rem;
+    padding-top: 6.4rem;
   }
   .mobile-nav {
     display: block;
+  }
+  .primary-header {
+    font-size: 3.6rem;
+    margin-bottom: 2.4rem;
+  }
+  .hero-header-description {
+    font-size: 1.8rem;
+  }
+  .btn-lg {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.6rem;
   }
 }

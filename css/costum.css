@@ -508,10 +508,10 @@ font-weight: 600;
 
 .footer .footer-container {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     flex-wrap: wrap;
     gap: 4.8rem;
-    margin: 0 8rem;
+    margin: 0 4.8rem;
 }
 
 .footer-container .box {
