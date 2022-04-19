@@ -198,6 +198,7 @@
 @media (max-width: 33em) {
   .hero {
     row-gap: 3.2rem;
+    padding-top: 3.2rem;
   }
   .mobile-nav {
     display: block;
