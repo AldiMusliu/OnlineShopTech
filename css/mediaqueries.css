@@ -30,7 +30,7 @@
   padding-top: 12.8rem;
 }
   .header {
-    position: fixed;
+    position: relative;
   }
 
   .mobile-nav {
