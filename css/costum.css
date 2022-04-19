@@ -1,0 +1,568 @@
+/* --------------Navbar Starts ---------------------------- */
+.header {
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #010101;
+        color: #F8F8F8;
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+}
+.nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 1.2rem;
+}
+
+.logo {
+    display: flex;
+}
+.logo a {
+    text-decoration: none;
+    padding-top: 0.4rem;
+    color: #dd6527;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+.logo a p::after {
+    content: ".";
+    color: #f3f3f3;
+}
+
+.logo a:hover {
+    text-decoration: none;
+    padding-top: 0.4rem;
+    color: #F8F8F8;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.nav-search {
+    display: flex;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #F8F8F8;
+    padding: 0.6rem 2.4rem;
+    border-radius: 12px;
+    
+}
+
+.searchInput {
+    border: none;
+    border-color: #F8F8F8;
+    background-color: transparent;
+    font-size: 1.6rem;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav-menu .cart-icon {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #F8F8F8;
+}
+
+.nav-menu li a:hover{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color:#dd6527;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 4.8rem;
+    background-color: #F8F8F8;
+    padding: 0.6rem 0rem;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #0a0a0a;
+    position: relative;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    background-color:#dd6527;
+    height: 0.3rem;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    font-weight: 600;
+}
+
+.menu li a:hover:after {
+    width: 100%;
+}
+
+.mobile-nav {
+  border: none;
+  padding: 1.6rem;
+  background-color: transparent;
+}
+
+.mobile-nav .mobile-nav-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: white;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+/* --------------Navbar End ---------------------------- */
+
+/* --------------Hero Section Starts ---------------------------- */
+.hero-section {
+    background-color: rgb(0, 0, 0);
+    padding: 12.8rem 0 6.4rem 0;
+  }
+  .hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 9.6rem;
+    column-gap: 8rem;
+    align-items: center;
+    padding: 3rem 3.2rem 0rem 3.2rem;
+    color: #f3f3f3;
+
+  }
+  
+  .hero-header-description {
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 1.3px;
+    margin-bottom: 4.8rem;
+    font-weight: 400;
+  }
+
+  .hero-image img{
+    max-width: 100%;
+    
+  }
+
+/* --------------Hero Section End ---------------------------- */
+
+/* --------------Categories Starts ---------------------------- */
+
+.categories{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+    gap: 1.2rem;
+    margin-bottom: 3.2rem;
+
+}
+
+
+  .categories img{
+    display: block;
+    height: 27rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.categories {
+    overflow: hidden;
+    background-color: #f3f3f3;
+    padding: 0rem 1rem;
+}
+
+
+
+.title-categorie h2{
+    margin: 2.8rem 1rem;
+      font-size: 3.2rem;
+      background-color: #f3f3f3;
+    color: #343a40;
+
+}
+.categorie0 {
+    grid-column: 1/4;
+    position: relative;
+  }
+  .categorie0::after {
+    content: "Cameras";
+    font-size: 1.6rem;
+    background-color: rgba(22, 22, 22, 0.7);
+    color:#F8F8F8;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    padding: 0.8rem 2.5rem;
+  }
+
+  .categorie1 {
+    grid-column: 4/8;
+    position: relative;
+  }
+  .categorie1::after {
+    content: "Phones & Tablets";
+    font-size: 1.6rem;
+    background-color: rgba(22, 22, 22, 0.7);
+    color:#F8F8F8;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    padding: 0.8rem 2.5rem;
+
+  }
+  .categorie2 {
+    grid-column: 8/13;
+    position: relative;
+  }
+  .categorie2::after {
+    content: "PC & Laptops";
+    font-size: 1.6rem;
+    background-color: rgba(22, 22, 22, 0.7);
+    color:#F8F8F8;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    padding: 0.8rem 2.5rem;
+
+  }
+  .categorie3 {
+    grid-column: 1/7;
+    position: relative;
+
+  }
+  .categorie3::after {
+    content: "Gaming accessoires";
+    font-size: 1.6rem;
+    background-color: rgba(22, 22, 22, 0.7);
+    color:#F8F8F8;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    padding: 1rem 3rem;
+  }
+  .categorie4 {
+    grid-column: 7/13;
+    position: relative;
+  }
+  .categorie4::after {
+    content: "Headphones";
+    font-size: 1.6rem;
+    background-color: rgba(22, 22, 22, 0.7);
+    color:#F8F8F8;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    padding: 0.8rem 2.5rem;
+  }
+  
+/* -----------------New arrivals Starts---------------- */
+.title-description h2{
+    margin:2.8rem 1rem 0 1rem;
+      font-size: 3.2rem;
+      background-color: #f3f3f3;
+    color: #343a40;
+
+}
+
+.title-description p{
+  font-size: 1.2rem;
+  margin: 0 1rem 2.8rem 1rem;
+  color: #5a6269;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4, 2.4fr);
+  gap: 2.4rem;
+  padding: 0rem 1rem;
+  margin-bottom: 4rem;
+
+}
+
+.card img{
+  display: block;
+  height: 150px;
+  width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: white;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rem;
+  padding: 1rem 0.8re7;
+
+}
+
+.card-btn {
+  padding: 0.5rem 0.6rem;
+  color: #dd6527;
+  background-color: white;
+  font-size: 1.6rem;
+  border: 1px solid black;
+  font-weight: 600;
+
+}
+
+.card-btn:hover{
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+padding: 0.5rem 0.6rem;
+background-color: #dd6527;
+color:#F8F8F8;
+font-size: 1.6rem;
+border: 1px solid black;
+font-weight: 600;
+
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.checked {
+  color: orange;
+}
+
+.show-more {
+  text-align: center;
+  padding-bottom: 10rem;
+  background-color: #f3f3f3;
+}
+
+.show-more button {
+  padding: 0.5rem 1rem;
+  background-color: #dd6527;
+  color:#F8F8F8;
+  font-size: 2rem;
+  border: 1px solid black;
+  font-weight: 500;
+}
+
+.show-more button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 0.5rem 1rem;
+  color: #dd6527;
+  background-color:#F8F8F8;
+  font-size: 2rem;
+  border: 1px solid black;
+  font-weight: 500;
+}
+
+.card-info {
+  padding-left: 0.8rem;
+}
+
+
+ .title-description {
+          margin: 30px 10px;
+          font-size: 20px;
+          background-color: #f3f3f3;
+      }
+      .title-description p{
+        font-size: 12px;
+        color: #5a6269;
+      }
+     .cards{
+        display: grid;
+        grid-template-columns: repeat(4, 2.4fr);
+        gap: 24px;
+        padding: 0 10px;
+        margin-bottom: 40px;
+
+     }
+
+    .card img{
+        display: block;
+        height: 150px;
+        width: 100%;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        background-color: white;
+    }
+   
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 10px 8px;
+      
+    }
+
+    .card-btn {
+        padding: 5px 6px;
+        color: #dd6527;
+        background-color: white;
+        font-size: 16px;
+        border: 1px solid black;
+        font-weight: 600;
+    
+    }
+
+    .card-btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px 6px;
+    background-color: #dd6527;
+    color:#F8F8F8;
+    font-size: 16px;
+    border: 1px solid black;
+    font-weight: 600;
+
+}
+
+    .card-title {
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+
+    .checked {
+        color: orange;
+    }
+
+    .show-more {
+        text-align: center;
+        padding-bottom: 100px;
+        background-color: #f3f3f3;
+    }
+
+    .show-more button {
+        padding: 5px 10px;
+        background-color: #dd6527;
+        color:#F8F8F8;
+        font-size: 20px;
+        border: 1px solid black;
+        font-weight: 500;
+    }
+
+    .show-more button:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 5px 10px;
+        color: #dd6527;
+        background-color:#F8F8F8;
+        font-size: 20px;
+        border: 1px solid black;
+        font-weight: 500;
+    }
+
+    .card-info {
+        padding-left: 8px;
+    }
+
+/* ----------Footer Section--------------- */
+
+
+.footer {
+
+    background-color: #010101;
+    color: #F8F8F8;
+    font-size: 1.8rem;
+}
+
+.footer .footer-container {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 4.8rem;
+    margin: 0 8rem;
+}
+
+.footer-container .box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer-container .box h3 {
+
+   color: #dd6527;
+   font-size: 2rem;
+   padding: 0.2rem 0rem;
+   margin-top: 3.2rem;
+   margin-bottom: 1.6rem;
+}
+
+.footer .footer-container .box a {
+    display: block;
+    color: #F8F8F8;
+    font-size: 1.6rem;
+   padding: 0.2rem 0rem;
+   text-decoration: none;
+
+}
+
+.socialNetwork-icon {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.footer .footer-container .box a:hover,
+.socialNetwork-icon p:hover {
+    color: #dd6527;
+}
+
+.socialNetwork-icon p {
+    font-size: 2.4rem;
+}
+
+
+.footer .copyrights {
+   text-align: center;
+   padding: 0.8rem;
+   margin-top: 2.4rem;
+   font-size: 1.2rem;
+   color: #F8F8F8;
+}
+
+.box .cart-icon {
+   display: flex;
+   gap: 0.2rem;
+   align-items: center;
+   
+}
