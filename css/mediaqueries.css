@@ -198,6 +198,9 @@
 
 
 @media (max-width: 33em) {
+  .search { 
+    padding: 0.4rem 0.8rem;
+  }
   
   .hero {
     row-gap: 8rem;
